@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 13px;
+    }
+
+    h3 {
+      color: #777;
+      font-weight: normal;
+      font-size: 18px;
+    }
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 0px;
+      margin: 0px 5px 0px 0px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    ul li a {
+      position: relative;
+      padding: 18px 5px;
+      display: block;
+      width: 132px;
+      height: 80px;
+      color: #666;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      padding: 0px 5px;
+    }
+
+    li a img.logo {
+      z-index: 10;
+      transition: transform .2s;
+      width: 50px;
+      height: 60px;
+      display: block;
+      margin: auto;
+    }
+
+    ul li a:hover img.logo {
+      transform: scale(2);
+    }
+
+    ul li a span {
+      z-index: 100;
+      position: relative;
+      display: block;
+      background-color: #fff;
+      height: 30px;
+      margin: 0px -5px;
+      line-height: 21px;
+    }
+
+    .add-icon {
+      position: absolute;
+      right: 39px;
+      z-index: 1000;
+      top: 37px;
+      transition: transform .2s;
+    }
+
+    ul li a:hover img.add-icon {
+      transform: scale(1.2);
+      top: 18px;
+    }
+
+    hr {
+      border: dotted 1px #eee;
+    }
+
+    .list-shortcuts {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .container {
+      width: 605px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Google Docs Launcher</h3>
+    <div class="new-shortcuts">
+      <ul>
+        <li><a title="Create new Document" href="https://docs.google.com/create" target="_blank"><img class="logo"
+              src="resources/img/docs.png" /><img src="resources/img/new-icon-32.png" class="add-icon" /><span>New
+              Document</span></a></li>
+        <li><a title="Create new Sheet" href="https://sheets.google.com/create" target="_blank"><img class="logo"
+              src="resources/img/spreadsheets.png" /><img src="resources/img/new-icon-32.png"
+              class="add-icon" /><span>New Sheet</span></a></li>
+        <li><a title="Create new Presentation" href="https://docs.google.com/presentation/create" target="_blank"><img
+              class="logo" src="resources/img/presentations.png" /><img src="resources/img/new-icon-32.png"
+              class="add-icon" /><span>New Presentation</span></a></li>
+        <li><a title="Create new Form" href="https://docs.google.com/forms/create" target="_blank"><img class="logo"
+              src="resources/img/forms.png" /><img src="resources/img/new-icon-32.png" class="add-icon" /><span>New
+              Form</span></a></li>
+      </ul>
+    </div>
+    <hr />
+    <div class="list-shortcuts">
+      <ul>
+        <li><a title="Open Documents" href="https://docs.google.com/document/u/0/" target="_blank"><img class="logo"
+              src="resources/img/docs.png" /><span>Documents</span></a></li>
+        <li><a title="Open Sheets" href="https://docs.google.com/spreadsheets/u/0/" target="_blank"><img class="logo"
+              src="resources/img/spreadsheets.png" /><span>Sheets<span></a></li>
+        <li><a title="Open Presentations" href="https://docs.google.com/presentation/u/0/" target="_blank"><img
+              class="logo" src="resources/img/presentations.png" /><span>Presentations</span></a></li>
+        <li><a title="Open Forms" href="https://docs.google.com/forms/u/0/" target="_blank"><img class="logo"
+              src="resources/img/forms.png" /><span>Forms</span></a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
